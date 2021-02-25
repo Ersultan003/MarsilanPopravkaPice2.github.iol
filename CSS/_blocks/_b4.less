@@ -1,0 +1,66 @@
+// main: ..//style.less
+.b4 {
+    background: url(.././images/dest/b5bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    color: @white;
+
+    .b4__wrapper {
+        width: 700px;
+        margin: 100px auto;
+        text-align: center;
+
+        h2 {
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 10px;
+            font-family: "MuseoSansBlack";
+        }
+
+
+
+        p {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: .9;
+            font-family: "MuseoSansLight";
+        }
+
+    }
+}
+
+@media (max-width:425px) {
+    .b4 {
+        padding: 50px 0;
+
+
+        .b4__wrapper {
+            width: 400px;
+
+            .b4__sheets {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b4 {
+        .b4__wrapper {
+            width: 350px;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .b4 {
+        .b4__wrapper {
+            width: 280px;
+
+            .b5__sheets {
+                width: 250px;
+            }
+        }
+    }
+}

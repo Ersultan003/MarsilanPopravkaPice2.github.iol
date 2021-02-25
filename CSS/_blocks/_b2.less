@@ -1,0 +1,111 @@
+// main:..//style.less
+
+.b2 {
+    .b2__header {
+        text-align: center;
+        background: @blue;
+        padding: 45px 0;
+
+        h2 {
+            color: @white;
+            font-size: 50px;
+            font-family: "MuseoSansBlack";
+        }
+    }
+
+    .b2__wrapper {
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-between;
+        color: @blue;
+
+        span {
+            font-size: 100px;
+            line-height: 99.19%;
+            font-family: "MuseoSansBlack";
+            margin-right: 30px;
+        }
+
+        p {
+            font-size: 21px;
+            line-height: 135.19%;
+        }
+
+        .b2__left,
+        .b2__right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .b2__desc {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width:1440px) {
+    .b2 {
+        .container {
+            max-width: 800px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .b2 {
+        .container {
+            max-width: 300px;
+        }
+
+        .b2__wrapper {
+            flex-wrap: wrap;
+            text-align: center;
+
+            span {
+                margin: auto;
+            }
+
+            .b2__left {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b2 {
+        padding: 30px 0;
+
+        .b2__header {
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        .b2__wrapper {
+            padding: 30px 0;
+        }
+
+    }
+}
+
+@media (max-width:425px) {
+    .b2 {
+        .b2__header {
+            h2 {
+                font-size: 35px;
+            }
+        }
+
+        .b2__wrapper {
+            padding: 30px 0;
+
+            span {
+                font-size: 80px;
+            }
+        }
+
+    }
+}
